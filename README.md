@@ -18,7 +18,6 @@ Vauxhall will always grab the latest WordPress and plugins.
 - Grunt DB Deployments
 - WordPress plugin fetching
 - WordPress Scaffolding by Yeoman
-- Capastrano deployments: coming soon
 
 ### Steps:
 
@@ -31,13 +30,15 @@ Vauxhall will always grab the latest WordPress and plugins.
 7. Install Grunt by running `npm install`
 8. Fetch your plugins by running `grunt shell`
 
+### That's it!
+
+Point your browser to [http://sharpmachine.dev](http://sharpmachine.dev).  You should see WordPress prompting you for the site title, etc.
+
 ### Troubleshooting
 
 #### Vhosts servername (default sharpmachine.dev) not working
 
 You simply need to edit your host file on your computer.  Here's how:
-
-### That's it!
 
 #### Coming Soon
 
