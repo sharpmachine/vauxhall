@@ -1,0 +1,18 @@
+{
+	"url": "http://sharpmachine.dev",
+	"tablePrefix": "wp_",
+	"dbHost": "localhost",
+	"dbName": "projectdb",
+	"dbUser": "projectdb",
+	"dbPass": "password",
+	"git": true,
+	"submodule": false,
+	"customDirs": false,
+	"installTheme": true,
+	"themeType": "git",
+	"themeUser": "sharpmachine",
+	"themeRepo": "slab",
+	"themeBranch": "master",
+	"wpDir": ".",
+	"contentDir": "wp-content",
+}
