@@ -11,7 +11,7 @@ Vauxhall will always grab the latest WordPress and plugins.
 - [Grunt](http://gruntjs.com) - run `$ npm install -g grunt-cli`
 - [Yeoman](http://yeoman.io/) - run `$ npm install -g yo`
 - [YeoPress](https://github.com/wesleytodd/YeoPress) - run `$ npm install -g yo generator-wordpress`
-- [Composer](https://getcomposer.org) - run `$ curl -sS https://getcomposer.org/installer | php`$ then `$ mv composer.phar /usr/local/bin/composer`
+- [Composer](https://getcomposer.org) - run `$ curl -sS https://getcomposer.org/installer | php` then `$ mv composer.phar /usr/local/bin/composer`
 
 ### Features
 
