@@ -1,10 +1,8 @@
 # Vauxhall
 
-> Vauxhall is a WordPress project scaffolding workflow created and used by Sharp Machine.
+Vauxhall is a WordPress project scaffolding workflow created and used by Sharp Machine.
 
-Vauxhall will always grab the latest WordPress and plugins.
-
-### Dependencies
+## Dependencies
 
 - [Vagrant](http://vagrantup.com) - (Download from site)
 - [Node.js](http://nodejs.org) - (Download from site)
@@ -13,14 +11,14 @@ Vauxhall will always grab the latest WordPress and plugins.
 - [YeoPress](https://github.com/wesleytodd/YeoPress) - run `$ npm install -g yo generator-wordpress`
 - [Composer](https://getcomposer.org) - run `$ curl -sS https://getcomposer.org/installer | php` then `$ mv composer.phar /usr/local/bin/composer`
 
-### Features
+## Features
 
 - Vagrant
 - Grunt DB Deployments
 - Composer WordPress plugin fetching
 - WordPress Scaffolding by Yeoman
 
-### Steps:
+## Steps:
 
 1. [Download Vauxhall](https://github.com/sharpmachine/vauxhall/archive/master.zip)
 2. Unzip and rename to project name
@@ -30,16 +28,10 @@ Vauxhall will always grab the latest WordPress and plugins.
 7. Install Grunt by running `$ npm install`
 8. Fetch plugins by running `$ composer install`
 
-### That's it!
+#### That's it!
 
-Point your browser to [http://sharpmachine.dev](http://sharpmachine.dev).  You should see WordPress prompting you for the site title, etc.
+Point your browser to [http://sharpmachine.dev](http://sharpmachine.dev).  You should see WordPress installation screen.
 
-### Troubleshooting
-
-#### Vhosts servername (default sharpmachine.dev) not working
-
-You simply need to edit your host file on your computer.  Here's how:
-
-#### Coming Soon
+### Coming Soon
 
 - Capastrano deployments
