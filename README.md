@@ -8,27 +8,27 @@ Vauxhall will always grab the latest WordPress and plugins.
 
 - [Vagrant](http://vagrantup.com)
 - [Node.js](http://nodejs.org)
-- [Grunt](http://gruntjs.com) - run `npm install -g grunt-cli`
-- [Yeoman](http://yeoman.io/) - run `npm install -g yo`
-- [YeoPress](https://github.com/wesleytodd/YeoPress) - run `npm install -g yo generator-wordpress`
+- [Grunt](http://gruntjs.com) - run `$ npm install -g grunt-cli`$ 
+- [Yeoman](http://yeoman.io/) - run `$ npm install -g yo`$ 
+- [YeoPress](https://github.com/wesleytodd/YeoPress) - run `$ npm install -g yo generator-wordpress`$ 
+- [Composer](https://getcomposer.org) - run `$ curl -sS https://getcomposer.org/installer | php`$  then `$ mv composer.phar /usr/local/bin/composer`$ 
 
 ### Features
 
 - Vagrant
 - Grunt DB Deployments
-- WordPress plugin fetching
+- Composer WordPress plugin fetching
 - WordPress Scaffolding by Yeoman
 
 ### Steps:
 
 1. [Download Vauxhall](https://github.com/sharpmachine/vauxhall/archive/master.zip)
 2. Unzip and rename to project name
-3. Edit Gruntfile.js deployment setting and shell settings
-4. If you need to, edit your config.yaml file, lines 76 & 78
-5. Install and start your server by running `vagrant up`
-6. Install WordPress by running `yo wordpress`
-7. Install Grunt by running `npm install`
-8. Fetch your plugins by running `grunt shell`
+3. Edit Gruntfile.js deployment setting
+5. Install and start your server by running `$ vagrant up`$ 
+6. Install WordPress by running `$ yo wordpress`$ 
+7. Install Grunt by running `$ npm install`$ 
+8. Fetch plugins by running `$ composer install`$ 
 
 ### That's it!
 

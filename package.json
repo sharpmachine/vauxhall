@@ -1,7 +1,7 @@
 {
   "name": "Vauxhall",
   "version": "1.0.0",
-  "description": "Quick setup of WordPress environment.",
+  "description": "Easy WordPress database migration.",
   "main": "index.js",
   "scripts": {
     "test": "test"
@@ -10,11 +10,6 @@
     "type": "git",
     "url": "git://github.com/sharpmachine/vauxhall.git"
   },
-  "keywords": [
-    "simple",
-    "focused",
-    "modern"
-  ],
   "author": "Jesse Kade",
   "license": "ISC",
   "bugs": {
@@ -23,7 +18,6 @@
   "homepage": "https://github.com/sharpmachine/vauxhall",
   "devDependencies": {
     "grunt": "latest",
-    "grunt-shell": "latest",
     "grunt-deployments": "latest"
   }
 }
