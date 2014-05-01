@@ -1,10 +1,8 @@
 # Vauxhall
 
-> Vauxhall is a WordPress project scaffolding workflow created and used by Sharp Machine.
+Vauxhall is a WordPress project scaffolding workflow created and used by Sharp Machine.
 
-Vauxhall will always grab the latest WordPress and plugins.
-
-### Dependencies
+## Dependencies
 
 - [Vagrant](http://vagrantup.com) - (Download from site)
 - [Node.js](http://nodejs.org) - (Download from site)
@@ -13,33 +11,44 @@ Vauxhall will always grab the latest WordPress and plugins.
 - [YeoPress](https://github.com/wesleytodd/YeoPress) - run `$ npm install -g yo generator-wordpress`
 - [Composer](https://getcomposer.org) - run `$ curl -sS https://getcomposer.org/installer | php` then `$ mv composer.phar /usr/local/bin/composer`
 
-### Features
+## Features
 
 - Vagrant
 - Grunt DB Deployments
 - Composer WordPress plugin fetching
 - WordPress Scaffolding by Yeoman
 
-### Steps:
+## Steps:
 
 1. [Download Vauxhall](https://github.com/sharpmachine/vauxhall/archive/master.zip)
 2. Unzip and rename to project name
 3. Edit Gruntfile.js deployment setting
 5. Install and start your server by running `$ vagrant up`
-6. Install WordPress by running `$ yo wordpress`
+6. Install WordPress by running `$ yo wordpress` (see walkthrough below)
 7. Install Grunt by running `$ npm install`
 8. Fetch plugins by running `$ composer install`
 
-### That's it!
+#### That's it!
 
-Point your browser to [http://sharpmachine.dev](http://sharpmachine.dev).  You should see WordPress prompting you for the site title, etc.
+Point your browser to [http://sharpmachine.dev](http://sharpmachine.dev).  You should see WordPress installation screen.
 
-### Troubleshooting
+## YeoPress Walkthrough
+ blah blah
 
-#### Vhosts servername (default sharpmachine.dev) not working
+## Using Vagrant
 
-You simply need to edit your host file on your computer.  Here's how:
+Shutdown - varant halt
 
-#### Coming Soon
+Start Server - vagrant up
+
+ssh into server - vagrant ssh
+
+anything else see docs
+
+## Migrating databases
+
+
+
+### Coming Soon
 
 - Capastrano deployments
