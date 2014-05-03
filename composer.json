@@ -9,9 +9,27 @@
     {
       "type":"git",
       "url":"https://github.com/sharpmachine/custompress.git"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "wordpress/wordpress",
+        "version": "dev-master",
+        "type": "webroot",
+        "dist": {
+          "type": "zip",
+          "url": "https://wordpress.org/latest.zip"
+        },
+        "require" : {
+          "fancyguy/webroot-installer": "1.1.0"
+        }
+      }
     }
   ],
   "require": {
+    "wordpress/wordpress": "dev-master",
+    "fancyguy/webroot-installer": "1.1.0",
+    "composer/installers": "v1.0.12",
     "wpackagist-plugin/admin-menu-editor": "*",
     "wpackagist-plugin/advanced-custom-fields": "*",
     "wpackagist-plugin/broken-link-checker": "*",
@@ -25,5 +43,14 @@
     "wpackagist-plugin/w3-total-cache": "*",
     "wpackagist-plugin/wp-dbmanager": "*",
     "custompress": "dev-master"
+  },
+  "extra": {
+    "installer-paths": {
+      "content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "content/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "webroot-dir": "wordpress",
+    "webroot-package": "wordpress/wordpress"
   }
 }
