@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Update the working tree after changes have been pushed here
+cd ..
+env -i git checkout -f
+
+# Check if a composer.json file is present
+if [ -f composer.json ]; then
+
+    # Detect composer binary
+    if which composer >/dev/null; then
+        composer='composer'
+    elif which composer.phar >/dev/null; then
+        composer='composer.phar'
+    else
+        # Install composer
+        curl -s http://getcomposer.org/installer | php >/dev/null
+        composer='php composer.phar'
+    fi
+
+    # Install or update packages specified in the lock file
+    $composer install
+
+fi
